@@ -2,16 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-
 let name = "Menno"
-let defaultTextColor ='#666'
 
 let defaultStyle = {
-  color: defaultTextColor
+  color: '#666'
 };
 
-class Agregate extends Component
-{
+class Agregate extends Component{
   render(){
     return(
       <div style={{...defaultStyle, width: '40%', display:'inline-block'}}>
@@ -21,19 +18,18 @@ class Agregate extends Component
   }
 }
 
-class Filter extends Component
-{
+class Filter extends Component{
   render(){
     return(
-      <div style={{width: '40%'}}>
+    <div style={{width: '40%'}}>
         <img/>
         <input type='text'/> 
       </div>
     );
   }
 }
-class Playlist extends Component
-{
+
+class Playlist extends Component{
   render(){
     return(
       <div style={{...defaultStyle, width:'25%', display:'inline-block'}}>
@@ -46,10 +42,9 @@ class Playlist extends Component
 }
 
 function App() {
-
   return (
     <div className="App">
-        <h1>Title</h1>
+        <h1 style={defaultStyle}>Title</h1>
         <Agregate/>
         <Agregate/>
         <Filter/>
@@ -59,6 +54,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
