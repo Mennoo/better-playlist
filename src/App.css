@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes logoMove {
   from {
     transform: rotate(0deg);
   }
@@ -37,7 +37,31 @@
   }
 }
 
+html,body {
+  background-color: grey;
+}
+
 h1 {
   font-size: 54px;
   color: #fff;
+}
+
+.Logo {
+  animation: logoMove 4s linear infinite;
+}
+.Playlist {
+  display: inline-block;
+  text-align: left;
+  width: 25%;
+  background-color: brown;
+}
+.Playlist li{
+}
+input {
+  background: #FFFFFF;
+  border: 1px solid #666;
+  border-radius: 4px;
+  height: 20px;
+  padding:7px;
+  font-size: 16px;
 }
